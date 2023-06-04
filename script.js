@@ -1,0 +1,13 @@
+function reverseNumber(x) {
+  var reversed = 0;
+  while (x !== 0) {
+    reversed = reversed * 10 + (x % 10);
+    x = Math.floor(x / 10);
+  }
+  return reversed;
+}
+
+// Example usage
+var number = 32243;
+var reversedNumber = reverseNumber(number);
+console.log(reversedNumber);
